@@ -23,15 +23,15 @@ export default defineComponent({
       educations: [
         {
           name: "University of Groningen (RUG)",
-          url: "/projects/1",
+          url: "https://www.rug.nl/",
           icon: "https://logo.clearbit.com/rug.nl",
-          description: "This is the first project"
+          description: "This is the second uni"
         },
         {
           name: "University of Brussels (ULB)",
-          url: "/projects/2",
+          url: "https://www.ulb.be/",
           icon: "https://logo.clearbit.com/ulb.be",
-          description: "This is the second project"
+          description: "This is the first uni"
         },
       ]
     }
