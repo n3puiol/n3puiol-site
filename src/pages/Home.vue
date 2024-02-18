@@ -6,7 +6,7 @@
     <Education />
   </div>
   <div class="bottom-1 flex gap-1 justify-center">
-    <a href="/" class="text-blue-500">Source Code</a>
+    <a href="https://github.com/n3puiol/n3puiol-site" class="text-blue-500">Source Code</a>
     <p>|</p>
     <a href="/about" class="text-blue-500">CV</a>
   </div>
