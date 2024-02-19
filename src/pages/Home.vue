@@ -12,7 +12,6 @@
 </template>
 
 <script setup lang="ts">
-import TopBanner from "../components/TopBanner.vue";
 import Projects from "../components/Projects.vue";
 import Skills from "../components/Skills.vue";
 import Education from "../components/Education.vue";
