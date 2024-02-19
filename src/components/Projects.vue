@@ -22,22 +22,22 @@ export default defineComponent({
     return {
       projects: [
         {
-          name: "Project 1",
-          url: "/projects/1",
-          icon: "https://via.placeholder.com/64",
-          description: "This is the first project"
+          name: "Rust Neural Network",
+          url: "/project/rust_neural_network",
+          icon: "https://logo.clearbit.com/rust-lang.ru",
+          description: "A simple neural network library written in Rust."
         },
         {
-          name: "Project 2",
-          url: "/projects/2",
+          name: "This website",
+          url: "/project/this_website",
           icon: "https://via.placeholder.com/64",
-          description: "This is the second project"
+          description: "An amazing website (debatable)."
         },
         {
-          name: "Project 3",
-          url: "/projects/3",
-          icon: "https://via.placeholder.com/64",
-          description: "This is the third project"
+          name: "Stickerswan",
+          url: "/project/stickerswan",
+          icon: "https://app.stickerswan.com/stickerswan.svg",
+          description: "A sticker creation app."
         }
       ]
     }

@@ -39,7 +39,7 @@ export default defineComponent({
           languages: ["C++", "Python", "Rust", "TypeScript", "Java", "C", "Kotlin"],
           ai: ["TensorFlow", "Pandas", "NumPy", "SciPy", "Scikit-Learn", "Keras", "Matplotlib"],
           fullStack: ["UX/UI design", "Unit testing", "Database modeling", "Server management", "APIs development", "Deployment", "Effective communication"],
-          frontEnd: ["Html/Css", "Vue", "Flutter", "JavaFx", "Qt5", "React", "Angular"],
+          frontEnd: ["Html/CSS", "Vue", "Flutter", "JavaFx", "Qt5", "React", "Angular"],
           backEnd: ["Django", "Flask", "FastAPI", "Node.js", "Express", "Spring", "Spark Java"],
           technology: ["Git", "Docker", "ROS", "AWS", "Nginx", "VPS", "GraphQL"],
           database: ["SQL", "NoSQL", "Postgresql", "MongoDB", "SnowflakeSQL", "MariaDB", "SQLite3"]

@@ -1,11 +1,10 @@
 <template>
   <div class="flex flex-col gap-12 items-center min-h-screen">
-    <TopBanner class="mt-12" />
     <Projects />
     <Skills />
     <Education />
   </div>
-  <div class="bottom-1 flex gap-1 justify-center">
+  <div class="bottom-1 flex gap-1 justify-center p-4">
     <a href="https://github.com/n3puiol/n3puiol-site" target="_blank" class="text-blue-500">Source Code</a>
     <p>|</p>
     <router-link to="about" class="text-blue-500">CV</router-link>

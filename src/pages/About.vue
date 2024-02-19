@@ -3,8 +3,9 @@
     <TopBanner class="mt-12"/>
     <Section title="About">
       <PDFViewer
-          source="https://raw.githubusercontent.com/mozilla/pdf.js/ba2edeae/examples/learning/helloworld.pdf"
-          class="h-screen"
+          source="cv.pdf"
+          style="height: 90vh;"
+          @download="handleDownload"
       />
     </Section>
   </div>
@@ -14,4 +15,11 @@
 import TopBanner from "../components/TopBanner.vue";
 import Section from "../components/template/Section.vue";
 import PDFViewer from "pdf-viewer-vue";
+
+const handleDownload = () => {
+  const link = document.createElement('a');
+  link.href = 'cv.pdf';
+  link.download = 'cv.pdf';
+  link.click();
+}
 </script>

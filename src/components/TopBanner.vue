@@ -2,7 +2,7 @@
   <div class="flex flex-col items-center gap-2">
     <div class="flex gap-2 items-baseline">
       <router-link to="/" class="text-8xl font-bold bg-gradient-to-r from-orange-700 via-blue-500 to-green-400
-      text-transparent bg-clip-text bg-300% animate-gradient hover:font-extrabold">
+      text-transparent bg-clip-text bg-300% animate-gradient hover:italic hover:underline">
         n3puiol
       </router-link>
       <a href="https://github.com/n3puiol" target="_blank">

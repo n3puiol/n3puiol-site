@@ -1,18 +1,20 @@
 <template>
   <div class="flex gap-2">
-    <img class="w-12 h-12 rounded-lg" :src="icon" :alt="name"/>
+    <img class="w-12 h-12 rounded-lg bg-white" :src="icon" :alt="name"/>
     <div class="flex flex-col gap-1">
-      <div class="flex gap-1 items-center">
-        <h1 class="font-bold text-xl">
+      <a class="flex gap-1 items-center" :href="url" v-if="url && url[0]=='h'" @mouseover="hover=true" @mouseleave="hover=false">
+        <h1 :class="{ 'font-bold text-xl': true, 'opacity-65': hover }">
           {{ name }}
         </h1>
-        <a :href="url" v-if="url?.length">
-          <ArrowTopRightIcon size="24" class="hover:opacity-65"/>
-        </a>
-      </div>
-      <p>
-        {{ description }}
-      </p>
+        <ArrowTopRightIcon size="24" :class="{ 'opacity-65': hover }" v-if="url?.length"/>
+      </a>
+      <router-link class="flex gap-1 items-center" :to="url" v-if="url && url[0]=='/'" @mouseover="hover=true" @mouseleave="hover=false">
+        <h1 :class="{ 'font-bold text-xl': true, 'opacity-65': hover }">
+          {{ name }}
+        </h1>
+        <ArrowTopRightIcon size="24" :class="{ 'opacity-65': hover }" v-if="url?.length"/>
+      </router-link>
+      <div v-html="description"></div>
     </div>
   </div>
 </template>
@@ -31,6 +33,11 @@ export default defineComponent({
   },
   components: {
     ArrowTopRightIcon
-  }
+  },
+  data() {
+    return {
+      hover: false
+    }
+  },
 })
 </script>
