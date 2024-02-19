@@ -1,6 +1,6 @@
 <template>
   <Section title="Skills">
-    <table class="table-auto border border-gray-300 rounded-lg border-separate">
+    <table class="table-auto border border-gray-300 rounded-lg border-separate" v-if="$grid['lg']">
       <caption></caption>
       <thead>
       <tr>
@@ -22,6 +22,17 @@
       </tr>
       </tbody>
     </table>
+    <div class="flex flex-col gap-4" v-else>
+      <div v-for="(category, index) in categories" :key="index">
+        <h2 class="text-2xl font-bold">{{ category }}</h2>
+        <div class="flex flex-wrap gap-2">
+          <div v-for="(skill, index) in skills[0][hyphenToCamelCase(category)]" :key="index"
+               class="bg-white rounded-lg px-2 py-1 text-black font-semibold">
+            {{ skill }}
+          </div>
+        </div>
+      </div>
+    </div>
   </Section>
 </template>
 
@@ -48,5 +59,12 @@ export default defineComponent({
       categories: ["Languages", "AI", "Full-stack", "Front-end", "Back-end", "Technology", "Database"]
     }
   },
+  methods: {
+    hyphenToCamelCase(category: string) {
+      return category.toLowerCase().replace(/-([a-z])/g, function (_, letter) {
+        return letter.toUpperCase();
+      });
+    }
+  }
 })
 </script>
