@@ -1,6 +1,5 @@
 <template>
   <div class="flex flex-col gap-12 items-center min-h-screen">
-    <TopBanner class="mt-12"/>
     <Section title="About">
       <PDFViewer
           source="cv.pdf"
@@ -12,7 +11,6 @@
 </template>
 
 <script setup lang="ts">
-import TopBanner from "../components/TopBanner.vue";
 import Section from "../components/template/Section.vue";
 import PDFViewer from "pdf-viewer-vue";
 
