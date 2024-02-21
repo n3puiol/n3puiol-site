@@ -1,28 +1,28 @@
 <template>
   <Section title="Skills">
-    <table class="table-auto border border-gray-300 rounded-lg border-separate" v-if="$grid['lg']">
-      <caption></caption>
-      <thead>
-      <tr>
-        <th v-for="(category, index) in categories.slice(0, categories.length - 1)" :key="index"
-            class="max-w-1/12 w-fit text-lg px-4 py-2 border-r border-gray-300">{{ category }}
-        </th>
-        <th class="max-w-1/12 w-fit px-4 py-2 border-gray-300">{{ categories[categories.length - 1] }}</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr v-for="(language, index) in skills[0].languages" :key="index" class="text-sm">
-        <td class="px-4 py-2 border-r border-t border-gray-300">{{ language }}</td>
-        <td class="px-4 py-2 border-r border-t border-gray-300">{{ skills[0].ai[index] }}</td>
-        <td class="px-4 py-2 border-r border-t border-gray-300">{{ skills[0].fullStack[index] }}</td>
-        <td class="px-4 py-2 border-r border-t border-gray-300">{{ skills[0].frontEnd[index] }}</td>
-        <td class="px-4 py-2 border-r border-t border-gray-300">{{ skills[0].backEnd[index] }}</td>
-        <td class="px-4 py-2 border-r border-t border-gray-300">{{ skills[0].technology[index] }}</td>
-        <td class="px-4 py-2 border-t border-gray-300">{{ skills[0].database[index] }}</td>
-      </tr>
-      </tbody>
-    </table>
-    <div class="flex flex-col gap-4" v-else>
+<!--    <table class="table-auto border border-gray-300 rounded-lg border-separate" v-if="$grid['lg']">-->
+<!--      <caption></caption>-->
+<!--      <thead>-->
+<!--      <tr>-->
+<!--        <th v-for="(category, index) in categories.slice(0, categories.length - 1)" :key="index"-->
+<!--            class="max-w-1/12 w-fit text-lg px-4 py-2 border-r border-gray-300">{{ category }}-->
+<!--        </th>-->
+<!--        <th class="max-w-1/12 w-fit px-4 py-2 border-gray-300">{{ categories[categories.length - 1] }}</th>-->
+<!--      </tr>-->
+<!--      </thead>-->
+<!--      <tbody>-->
+<!--      <tr v-for="(language, index) in skills[0].languages" :key="index" class="text-sm">-->
+<!--        <td class="px-4 py-2 border-r border-t border-gray-300">{{ language }}</td>-->
+<!--        <td class="px-4 py-2 border-r border-t border-gray-300">{{ skills[0].ai[index] }}</td>-->
+<!--        <td class="px-4 py-2 border-r border-t border-gray-300">{{ skills[0].fullStack[index] }}</td>-->
+<!--        <td class="px-4 py-2 border-r border-t border-gray-300">{{ skills[0].frontEnd[index] }}</td>-->
+<!--        <td class="px-4 py-2 border-r border-t border-gray-300">{{ skills[0].backEnd[index] }}</td>-->
+<!--        <td class="px-4 py-2 border-r border-t border-gray-300">{{ skills[0].technology[index] }}</td>-->
+<!--        <td class="px-4 py-2 border-t border-gray-300">{{ skills[0].database[index] }}</td>-->
+<!--      </tr>-->
+<!--      </tbody>-->
+<!--    </table>-->
+    <div class="flex flex-col gap-4">
       <div v-for="(category, index) in categories" :key="index">
         <h2 class="text-2xl font-bold">{{ category }}</h2>
         <div class="flex flex-wrap gap-2">
