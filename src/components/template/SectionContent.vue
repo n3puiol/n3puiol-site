@@ -6,13 +6,13 @@
         <h1 :class="{ 'font-bold text-xl': true, 'opacity-65': hover }">
           {{ name }}
         </h1>
-        <ArrowTopRightIcon size="24" :class="{ 'opacity-65': hover }" v-if="url?.length"/>
+        <ArrowTopRightIcon :size="24" :class="{ 'opacity-65': hover }" v-if="url?.length"/>
       </a>
       <router-link class="flex gap-1 items-center" :to="url" v-if="url && url[0]=='/'" @mouseover="hover=true" @mouseleave="hover=false">
         <h1 :class="{ 'font-bold text-xl': true, 'opacity-65': hover }">
           {{ name }}
         </h1>
-        <ArrowTopRightIcon size="24" :class="{ 'opacity-65': hover }" v-if="url?.length"/>
+        <ArrowTopRightIcon :size="24" :class="{ 'opacity-65': hover }" v-if="url?.length"/>
       </router-link>
       <div v-html="description"></div>
     </div>

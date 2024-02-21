@@ -14,7 +14,7 @@
         Louis Vanstappen
       </h2>
       <a href="https://linkedin.com/in/louis-vanstappen" target="_blank">
-        <LinkedinIcon size="32" class="hover:opacity-65"/>
+        <LinkedinIcon :size="32" class="hover:opacity-65"/>
       </a>
     </div>
   </div>
